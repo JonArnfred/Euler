@@ -211,7 +211,6 @@ public class Euler13
       result = result.add(b99);
       result = result.add(b100);
       
-      
           System.out.println("Result: "+result);
        }
 }

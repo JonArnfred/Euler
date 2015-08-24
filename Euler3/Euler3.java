@@ -1,12 +1,14 @@
 import java.math.BigDecimal;
-//Metoden finder den største primtals faktorering af a.
+
+//Metoden finder den stoerste primtals faktorering af a.
+
 
 
 public class Euler3
 {
    public static void main (String [] args)
    {
-      long a = 600851475143L;
+      long a = 13195L;
       for(double i = 2; i <a; i++)
       {
          double result = a/i;
@@ -24,7 +26,6 @@ public class Euler3
             {
                if(result%i==0)
                {
-                  System.out.println(new BigDecimal(result).toPlainString());
                   System.out.println(i);
                }
             }

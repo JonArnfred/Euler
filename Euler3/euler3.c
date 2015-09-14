@@ -1,8 +1,4 @@
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
 /*
    The prime factors of 13195 are 5, 7, 13 and 29.
    What is the largest prime factor of the number 600851475143 ?
@@ -15,9 +11,11 @@
    the fundamental theorem of arithmetic: every positive integer has a single unique prime factorization
 
  */
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
-    long number =;
+    long number = 600851475143;
     for(long i = 1; (i*i) <number; i+=2){
         if(number%i==0){
             number /= i;

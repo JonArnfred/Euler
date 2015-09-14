@@ -11,7 +11,6 @@ int main(int argc, char *argv[]){
         printf("error");
     }
 
-
     //løber igennem alle tal, der potentielt er primtal
     for(long i = 3; i > 0; i +=2){
         prime = 1;
@@ -20,10 +19,8 @@ int main(int argc, char *argv[]){
                 prime = 0;
                 break;
             }
-        }
-        if(prime == 0){//if i is not prime, we continue
-            continue;
-        } else{//if i is prime
+        }//if i is prime
+        if(prime != 0){
             latestPrime = i;
             numberOfPrimes++;
             //	printf("is this prime?: %d\n", latestPrime);
@@ -35,3 +32,4 @@ int main(int argc, char *argv[]){
     }
     return 0;
 }
+

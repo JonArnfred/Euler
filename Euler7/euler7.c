@@ -1,15 +1,16 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-int main(int argc, char *argv[]){
-    int limit;
-    int numberOfPrimes = 1;//2 is prime
-    int prime = 1;//true per default
-    int latestPrime = 0; //just the latest found prime
+int isPrime(int);
+//int limit;
+int numberOfPrimes = 1;//2 is prime
+int prime = 1;//true per default
 
-    if(sscanf(argv[1],"%i", &limit)!=1){
-        printf("error");
-    }
+
+int main(int argc, char *argv[]){
+   //    if(sscanf(argv[1],"%i", &limit)!=1){
+   //     printf("error");
+   // }
 
     //løber igennem alle tal, der potentielt er primtal
     for(long i = 3; i > 0; i +=2){
@@ -21,11 +22,10 @@ int main(int argc, char *argv[]){
             }
         }//if i is prime
         if(prime != 0){
-            latestPrime = i;
             numberOfPrimes++;
             //	printf("is this prime?: %d\n", latestPrime);
-            if(numberOfPrimes == limit){
-                printf("%dth number of prime: %d", numberOfPrimes, latestPrime);
+            if(numberOfPrimes == 10001){
+                printf("%dth number of prime: %lu", numberOfPrimes, i);
                 break;
             }
         }

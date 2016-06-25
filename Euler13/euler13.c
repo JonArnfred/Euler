@@ -124,14 +124,14 @@ int  main(int argc, char *argv[]){
         while((c = getc(file)) != EOF){
             numbers[x][y] = c - '0';
             y++;
-            if(y==50){
+            if(y == 50){
                 y = 0;
                 x++;
             }
         }
     }
 
-    //læg dem fra arraet af chars ned i enkle tal, læg de tal sammen
+    //læg dem fra arrayet af chars ned i enkle tal, læg de tal sammen
     uint64_t _12digits = 0;
     uint64_t result = 0;
     for(int i = 0; i < 100; i++){

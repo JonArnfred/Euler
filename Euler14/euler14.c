@@ -18,11 +18,11 @@ int main(int argc, char *argv[]){
     long limit = 1000000;
     long number = 0;
     long a;
-    long numbers[10000000];
+    // long numbers[10000000];
 
 //læg alle tal i en række.
 
-
+    printf("yes %ld", range);
     //hvis den rammer et tal, så er resten af rækken identisk
     for(long i =0; i < limit; i++){
 
